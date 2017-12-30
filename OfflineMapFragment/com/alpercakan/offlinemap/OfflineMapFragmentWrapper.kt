@@ -1,3 +1,7 @@
+// Created by Alper Çakan
+// Version: 1.0
+// Date: 15 Jul 2017
+
 package com.alpercakan.offlinemap
 
 import android.graphics.Bitmap
