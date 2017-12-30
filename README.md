@@ -8,3 +8,12 @@ A wrapper class for MapFragment from Maps SDK.
 - Networking is also performed through calling the function supplied asynchronously, hence you can use the networking library of your choice for maybe better debugging, logging, statistics etc.
 
 Please note that the code is just experimental and for practice; and has not been used or tested by the author for any possible term-violating usages. The responsibility for avoidance of any possible violation of terms of Google Maps, OpenStreetMaps (or any other party involved) through usage of this library, belongs only to the person(s) using it such and not to the author of this code.
+
+Features:
+
+- Choice of tile source: Google Map or OpenStreetMaps
+- Networking, cache writing & reading done through custom function supplied
+- Support for cache-on-demand (i.e, cache a tile only when panned there) and regional pre-cache
+- Retina maps (tiles)
+- Offline estimation cache file size of a region, in bytes
+- "Pretty rectangle" calculation: Minimum enclosing rectangle of a list POIs, with given rectangle ratio
