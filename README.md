@@ -17,3 +17,12 @@ Features:
 - Retina maps (tiles)
 - Offline estimation of cache file size of a region, in bytes
 - "Pretty rectangle" calculation: Minimum enclosing rectangle of a list POIs, with given rectangle ratio
+
+## Usage
+
+OfflineMapFragmentWrapper(val mapFragment: MapFragment?,
+                          val cacheWriter: (cacheName: String, data: ByteArray) -> Boolean,
+                          val cacheReader: (cacheName: String) -> ByteArray?,
+                          val tileFetcher: (url: String) -> ByteArray?,
+                          var useRetinaTiles: Boolean = true,
+                          val tileSource: TileSource = TileSource.GOOGLE_MAPS)
