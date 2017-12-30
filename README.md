@@ -1,5 +1,5 @@
 # OfflineMapFragment
-An offline map with support for retina maps, written in Kotlin for Android, simply used as a wrapper for MapFragment.
+An offline (i.e., cached) map library for Android, with retina tiles support for both Google Maps and OpenStreetMaps, simply used as a wrapper for MapFragment.
 
 A wrapper class for MapFragment from Maps SDK. 
 
