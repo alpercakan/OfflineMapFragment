@@ -15,5 +15,5 @@ Features:
 - Networking, cache writing & reading done through custom function supplied
 - Support for cache-on-demand (i.e, cache a tile only when panned there) and regional pre-cache
 - Retina maps (tiles)
-- Offline estimation cache file size of a region, in bytes
+- Offline estimation of cache file size of a region, in bytes
 - "Pretty rectangle" calculation: Minimum enclosing rectangle of a list POIs, with given rectangle ratio
