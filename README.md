@@ -19,10 +19,15 @@ Features:
 - "Pretty rectangle" calculation: Minimum enclosing rectangle of a list POIs, with given rectangle ratio
 
 ## Usage
-
-<code>OfflineMapFragmentWrapper(val mapFragment: MapFragment?,
+```kotlin
+OfflineMapFragmentWrapper(val mapFragment: MapFragment?,
                           val cacheWriter: (cacheName: String, data: ByteArray) -> Boolean,
                           val cacheReader: (cacheName: String) -> ByteArray?,
                           val tileFetcher: (url: String) -> ByteArray?,
                           var useRetinaTiles: Boolean = true,
-                          val tileSource: TileSource = TileSource.GOOGLE_MAPS)</code>
+                          val tileSource: TileSource = TileSource.GOOGLE_MAPS)
+```
+
+- Implement cache writer & reader and tile fetcher. First two are responsible for saving & retrieving the given ByteArray in an associative (key, value) pair manner. Note that you can also always return `null` from the cache reader, then the wrapper will simply reduce to an non-cached map (but of course with extra functionality, such as programmatic retina creation from standard tiles). Tile fetcher is responsible for downloading the given HTTP/S URL and returning its body as a byte array.
+- Simply create your MapFragment (or if it is placed in XML, find it with fragment manager), supply the wrapper with it. Then, call createMap method of the wrapper, which accepts a callback.
+- You're done!
