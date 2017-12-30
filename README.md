@@ -20,9 +20,9 @@ Features:
 
 ## Usage
 
-OfflineMapFragmentWrapper(val mapFragment: MapFragment?,
+<code>OfflineMapFragmentWrapper(val mapFragment: MapFragment?,
                           val cacheWriter: (cacheName: String, data: ByteArray) -> Boolean,
                           val cacheReader: (cacheName: String) -> ByteArray?,
                           val tileFetcher: (url: String) -> ByteArray?,
                           var useRetinaTiles: Boolean = true,
-                          val tileSource: TileSource = TileSource.GOOGLE_MAPS)
+                          val tileSource: TileSource = TileSource.GOOGLE_MAPS)</code>
