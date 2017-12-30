@@ -11,7 +11,7 @@ A wrapper class for MapFragment from Maps SDK.
 
 Features:
 
-- Choice of tile source: Google Map or OpenStreetMaps
+- Choice of tile source: Google Maps or OpenStreetMaps
 - Networking, cache writing & reading done through custom function supplied
 - Support for cache-on-demand (i.e, cache a tile only when panned there) and regional pre-cache
 - Retina maps (tiles)
