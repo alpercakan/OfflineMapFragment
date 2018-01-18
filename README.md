@@ -1,7 +1,7 @@
 # OfflineMapFragment
 An offline (i.e., cached) map library for Android, with retina tiles support for both Google Maps and OpenStreetMaps, simply used as a wrapper for MapFragment.
 
-A wrapper class for MapFragment from Maps SDK. 
+A wrapper class for MapFragment from Google Maps SDK. 
 
 - Provides tile caching capabilities with optional tile sources, such as OpenStreetMaps or Google Maps API. 
 - Cached maps are written and read through functions supplied, so they can be stored wherever you want (or you can even ignore them and use just for OSM retina tiles, which is not available directly and thus is programmatically created by the library). 
