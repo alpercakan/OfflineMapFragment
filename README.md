@@ -32,4 +32,4 @@ OfflineMapFragmentWrapper(val mapFragment: MapFragment?,
 
 2. Simply create your MapFragment (or if it is placed in XML, find it with fragment manager), supply the wrapper with it. Then, call createMap method of the wrapper, which accepts a callback.
 
-3. You're done!
+3. You're done.
